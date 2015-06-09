@@ -1,4 +1,5 @@
 const config = require('./config');
+require('dotenv').load();
 
 if (config.isProduction || require('piping')(config.piping)) {
   if (!process.env.NODE_ENV)

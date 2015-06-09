@@ -13,6 +13,7 @@ import '../app/store';
 import '../auth/store';
 import '../todos/store';
 import '../user/store';
+import '../chat/store';
 
 // Leverage webpack require goodness for feature toggle based dead code removal.
 require('./app.styl');
@@ -32,7 +33,8 @@ class App extends Component {
       isLoggedIn: appState.userCursor().get('isLoggedIn'),
       pendingActions: appState.pendingActionsCursor(),
       todos: appState.todosCursor(),
-      user: appState.userCursor()
+      user: appState.userCursor(),
+      chat: appState.chatCursor()
     };
   }
 

@@ -27,6 +27,10 @@ export default {
       edit: 'Edit',
       save: 'Save'
     },
+    chat: {
+      title: 'Reachat',
+      infoHtml: 'A simple socket powered chat application, built with full stack react'
+    },
     confirmations: {
       cancelEdit: `You have unsaved changes. Are you sure you want to cancel them?`
     },
@@ -44,7 +48,8 @@ export default {
       home: 'Home',
       login: 'Login',
       me: 'Me (protected)',
-      todos: 'Todos'
+      todos: 'Todos',
+      chat: 'Chat'
     },
     notFound: {
       continueMessage: 'Continue here please.',
@@ -56,38 +61,31 @@ export default {
       andMuchMore: '... and much more.',
       header: 'Things to Check',
       isomorphicPage: 'Isomorphic page',
-      itemListHtml: [  // List of language dependent length containing translated messages for React components
+      itemListHtml: [ // List of language dependent length containing translated messages for React components
         {
           key: 'source',
           txt: `View page source, take a look how HTML is server rendered with initial data.`
-        },
-        {
+        }, {
           key: 'console',
           txt: `Open console, take a look how actions are logged from <code>src/client/dispatcher.js</code>.`
-        },
-        {
+        }, {
           key: 'development',
           txt: `Development mode (<code>gulp</code>), try edit styles or react component to see
                 <a href="https://www.youtube.com/watch?v=pw4fKkyPPg8">live-editing</a> without app reload.`
-        },
-        {
+        }, {
           key: 'production',
           txt: `Production mode (<code>gulp -p</code>), to check built app performance and size.`
-        },
-        {
+        }, {
           key: 'undo',
           txt: `Undo button. (temporally disabled)`
-        },
-        {
+        }, {
           key: 'edit',
           txt: `Edit todo: Click to edit, esc to cancel, enter to save.`
-        },
-        {
+        }, {
           key: 'globalState',
           txt: `Global immutable app state, have you seen this <a href="https://www.youtube.com/watch?v=5yHFTN-_mOo">
                 video</a>? Try <b>ctrl+shift+s</b> to save app state, and <b>ctrl+shift+l</b> to load.`
-        },
-        {
+        }, {
           key: 'pureComponent',
           txt: `<a href="http://facebook.github.io/react/docs/advanced-performance.html">Advanced performance</a>
                 with PureComponent. Always use PureComponent and everything will be faster and simpler.`
