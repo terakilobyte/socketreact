@@ -7,7 +7,7 @@ from 'http';
 
 const app = express();
 const server = Server(app);
-const io = require('socket.io')(server)
+const io = require('socket.io')(server);
 
 // TODO: Add API sub-app to demonstrate other use cases
 // app.use('/api/v1', require('./api'));
